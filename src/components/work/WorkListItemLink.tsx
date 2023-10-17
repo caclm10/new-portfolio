@@ -6,7 +6,7 @@ interface WorkListItemLinkProps {
 const WorkListItemLink = ({ name, href }: WorkListItemLinkProps) => {
   return (
     <div className="flex flex-col items-center">
-      <h4 className="text-2xl mt-2">
+      <h4 className="text-lg lg:text-2xl mt-2">
         <a target="_blank" href={href} className="hover:underline">
           <span>{name} </span>
           <svg

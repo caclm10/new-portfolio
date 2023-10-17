@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Works() {
   return (
-    <main className="flex-grow flex items-start justify-center">
+    <main className="flex-grow flex lg:items-start justify-center">
       <div className="flex w-full max-w-6xl flex-col justify-center">
         <PageHeader
           title="Development Works"
