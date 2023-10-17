@@ -20,9 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavigationBar />
 
-        <Background>
-          <main>{children}</main>
-        </Background>
+        <Background>{children}</Background>
       </body>
     </html>
   );
