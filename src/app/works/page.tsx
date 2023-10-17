@@ -1,4 +1,3 @@
-import Icon from "@/components/icon/Icon";
 import PageHeader from "@/components/page/PageHeader";
 import WorkList from "@/components/work/WorkList";
 import type { Metadata } from "next";
