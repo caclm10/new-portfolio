@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.splide__arrow {
+    background: #262626 !important;
+}
+
+.splide__arrow svg {
+    fill: #EAB308 !important;
+}
+
+.splide__pagination__page {
+    background: #262626 !important;
+}
+
+.splide__pagination__page.is-active {
+    background: #EAB308 !important;
+}
