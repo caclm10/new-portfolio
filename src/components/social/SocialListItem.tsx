@@ -1,0 +1,16 @@
+import Icon from "../icon/Icon";
+
+interface SocialListItemProps {
+  href: string;
+  icon: string;
+}
+
+const SocialListItem = ({ href, icon }: SocialListItemProps) => {
+  return (
+    <a target="_blank" href={href} className="transition hover:text-yellow-500">
+      <Icon icon={icon} className="text-4xl" />
+    </a>
+  );
+};
+
+export default SocialListItem;
