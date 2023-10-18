@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Lewin Xander Gulo",
@@ -18,15 +17,7 @@ export default function Home() {
         </h1>
 
         <div className="max-w-[300px] hidden lg:block">
-          <Image
-            src="/web_dev_illus.png"
-            width="0"
-            height="0"
-            alt="web development illustration"
-            sizes="100vw"
-            priority
-            className="w-full h-auto"
-          />
+          <img src="/web_dev_illus.png" alt="web development illustration" />
         </div>
       </div>
     </main>

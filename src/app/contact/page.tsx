@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import AboutList from "@/components/about/AboutList";
 import SocialList from "@/components/social/SocialList";
 
@@ -14,15 +13,7 @@ export default function Contact() {
         <div className="grid w-full max-w-6xl lg:grid-cols-[350px_1fr] lg:space-x-24 space-y-12 lg:space-y-0">
           <div className="flex flex-col items-center">
             <div className="max-w-[256px] overflow-hidden rounded-full">
-              <Image
-                src="/profile.jpg"
-                alt="profile"
-                width="0"
-                height="0"
-                sizes="100vw"
-                priority
-                className="w-full h-auto"
-              />
+              <img src="/profile.jpg" alt="profile" />
             </div>
 
             <h1 className="mt-4 text-3xl font-medium">Lewin Xander Gulo</h1>
