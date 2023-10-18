@@ -13,7 +13,7 @@ You can visit my portfolio website at [https://portfolio-caclm10.vercel.app](htt
 
 ## Developer
 
-This project is developed by [Lewin Xander](https://portfolio-caclm10.vercel.app). If you'd like to get in touch with me, you can email me at [lewinxander@gmail.com](mailto:youremail@gmail.com).
+This project is developed by [Lewin Xander](https://portfolio-caclm10.vercel.app). If you'd like to get in touch with me, you can email me at [lewinxander@gmail.com](mailto:lewinxander@gmail.com).
 
 ## Installation Guide
 
