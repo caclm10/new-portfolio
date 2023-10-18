@@ -1,7 +1,7 @@
-import AboutList from "@/components/about/AboutList";
-import Icon from "@/components/icon/Icon";
-import SocialList from "@/components/social/SocialList";
 import type { Metadata } from "next";
+import Image from "next/image";
+import AboutList from "@/components/about/AboutList";
+import SocialList from "@/components/social/SocialList";
 
 export const metadata: Metadata = {
   title: "Lewin Xander Gulo | Contact",
@@ -14,9 +14,13 @@ export default function Contact() {
         <div className="grid w-full max-w-6xl lg:grid-cols-[350px_1fr] lg:space-x-24 space-y-12 lg:space-y-0">
           <div className="flex flex-col items-center">
             <div className="max-w-[256px] overflow-hidden rounded-full">
-              <img
-                src="https://pbs.twimg.com/media/FtUUrrdaYAAo5vB.jpg"
-                alt=""
+              <Image
+                src="/profile.jpg"
+                alt="profile"
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-full h-auto"
               />
             </div>
 
