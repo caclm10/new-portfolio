@@ -11,7 +11,7 @@ export const SOCIALS = [
     },
     {
         id: "email",
-        href: "#",
+        href: "mailto:lewinxander@gmail.com",
         icon: "mdi:email"
     },
     {
