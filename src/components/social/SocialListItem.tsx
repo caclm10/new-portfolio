@@ -1,8 +1,9 @@
+import type { IconifyIcon } from "@iconify/types";
 import Icon from "../icon/Icon";
 
 interface SocialListItemProps {
   href: string;
-  icon: string;
+  icon: IconifyIcon;
 }
 
 const SocialListItem = ({ href, icon }: SocialListItemProps) => {

@@ -7,7 +7,7 @@ interface SkillListItemProps {
 const SkillListItem = ({ src, alt, description }: SkillListItemProps) => {
   return (
     <div className="flex items-start space-x-10">
-      <div className="mt-1.5 max-w-[50px]">
+      <div className="mt-1.5 w-full max-w-[50px]">
         <img src={src} alt={alt} />
       </div>
 

@@ -17,6 +17,10 @@
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
+    "@iconify/icons-basil": "^1.2.0",
+    "@iconify/icons-fluent": "^1.2.37",
+    "@iconify/icons-mdi": "^1.2.47",
+    "@iconify/icons-solar": "^1.2.3",
     "@iconify/react": "^4.1.1",
     "@types/node": "^20",
     "@types/react": "^18",
