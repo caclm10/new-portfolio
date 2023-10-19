@@ -7,7 +7,8 @@ import Background from "@/components/background/Background";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  description: "Lewin Xander's portfilo",
+  description:
+    "Welcome to my personal portfolio. My Name is Lewin Xander and I am a web developer with expertise in web development, mainly using the Laravel framework. Explore my work, discover my latest projects, and learn more about my web development expertise.",
 };
 
 export default function RootLayout({

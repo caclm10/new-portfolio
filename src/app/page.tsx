@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="flex-grow flex items-center justify-center">
-      <div className="flex flex-col lg:flex-row w-full max-w-5xl items-center justify-between">
+      <div className="flex flex-col md:flex-row md:space-x-5 w-full max-w-5xl items-center justify-between">
         <h1 className="inline-flex flex-col font-medium">
           <span className="text-5xl">Hai!</span>
           <span className="mt-1 text-4xl">My name is Lewin Xander.</span>
@@ -16,7 +16,7 @@ export default function Home() {
           </span>
         </h1>
 
-        <div className="max-w-[300px] hidden lg:block">
+        <div className="max-w-[300px] hidden md:block">
           <img src="/web_dev_illus.png" alt="web development illustration" />
         </div>
       </div>

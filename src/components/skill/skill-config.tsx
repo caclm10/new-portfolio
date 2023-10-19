@@ -9,8 +9,7 @@ export const SKILLS = [
       <p>
         <SkillListItemName text="PHP" /> is my primary language, and I have
         extensive experience using it to build dynamic web applications. I
-        specialize in creating custom content management systems, e-commerce
-        platforms, and interactive websites, ensuring seamless user experiences
+        specialize in creating custom content management systems and interactive websites, ensuring seamless user experiences
         and secure data handling.
       </p>
     ),

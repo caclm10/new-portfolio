@@ -14,7 +14,7 @@ const PageHeader = ({
   return (
     <div className={cn("flex justify-center", rootClassName)}>
       <div className="flex flex-col items-end">
-        <h2 className="mb-2 text-4xl lg:text-5xl font-semibold tracking-wide">
+        <h2 className="mb-2 text-4xl md:text-5xl font-semibold tracking-wide">
           {title}
         </h2>
         <h3 className="font-medium text-yellow-500">{subtitle}</h3>

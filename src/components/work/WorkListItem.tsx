@@ -1,3 +1,4 @@
+import WorkListItemImageWrapper from "./WorkListItemImageWrapper";
 import WorkListItemLink from "./WorkListItemLink";
 
 interface WorkListItemProps {
@@ -10,9 +11,9 @@ interface WorkListItemProps {
 const WorkListItem = ({ src, alt, name, href }: WorkListItemProps) => {
   return (
     <>
-      <div className="w-full max-w-[780px] rounded-lg overflow-hidden">
+      <WorkListItemImageWrapper>
         <img src={src} alt={alt} />
-      </div>
+      </WorkListItemImageWrapper>
 
       <WorkListItemLink name={name} href={href} />
     </>

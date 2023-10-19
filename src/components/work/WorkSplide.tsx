@@ -1,9 +1,10 @@
 "use client";
 import { Splide } from "@splidejs/react-splide";
+import SplideTrack from "../splide/SplideTrack";
 
 // Default theme
 import "@splidejs/react-splide/css";
-import SplideTrack from "../splide/SplideTrack";
+import WorkSplideControls from "./WorkSplideControls";
 
 interface WorkSplideProps {
   children: React.ReactNode;
@@ -12,11 +13,11 @@ interface WorkSplideProps {
 const WorkSplide = ({ children }: WorkSplideProps) => {
   return (
     <Splide hasTrack={false}>
-      <div className="max-w-[780px] rounded-lg overflow-hidden group">
+      <WorkSplideControls />
+
+      <div className="relative max-w-[780px] rounded-lg overflow-hidden group">
         <SplideTrack>{children}</SplideTrack>
       </div>
-
-      <div className="splide__pagination !-bottom-7"></div>
     </Splide>
   );
 };

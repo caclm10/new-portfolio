@@ -6,8 +6,8 @@ interface SkillListItemProps {
 
 const SkillListItem = ({ src, alt, description }: SkillListItemProps) => {
   return (
-    <div className="flex items-start space-x-10">
-      <div className="mt-1.5 w-full max-w-[50px]">
+    <div className="grid grid-cols-[50px_1fr] space-x-7 lg:space-x-10">
+      <div className="mt-1.5">
         <img src={src} alt={alt} />
       </div>
 
