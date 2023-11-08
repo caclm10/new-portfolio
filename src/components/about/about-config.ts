@@ -36,7 +36,7 @@ export const ABOUTS: Abouts[] = [
         details: [
             {
                 id: "kkn-negeri-lama",
-                title: "Negeri Lama Village",
+                title: "Kelurahan Negeri Lama",
                 year: "2022",
                 subtitles: ["Community Service Program"],
                 descriptions: [
