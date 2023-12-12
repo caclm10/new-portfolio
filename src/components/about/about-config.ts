@@ -25,9 +25,21 @@ export const ABOUTS: Abouts[] = [
                     "Semarang, Indonesia",
                 ],
                 descriptions: [
-                    "Bachelor Degree in Computer Science, 3.65 of 4.00."
+                    "Bachelor Degree in Computer Science",
+                    "Grade 3.65 of 4.00 (Cumlaude)"
                 ],
             },
+            {
+                id: 'sutomo',
+                title: 'SMA Swasta Sutomo 1',
+                year: "2016 - 2019",
+                subtitles: [
+                    "Medan, Indonesia"
+                ],
+                descriptions: [
+                    "Enrolled in Mathematics and Natural Sciences Track"
+                ]
+            }
         ],
     },
     {
@@ -48,7 +60,7 @@ export const ABOUTS: Abouts[] = [
                 id: "pkl-eria",
                 title: "SMA Swasta Eria Medan",
                 year: "2022",
-                subtitles: ["Web Development (Intern)"],
+                subtitles: ["Web Development (Internship)"],
                 descriptions: ["Responsible and play a key role in building web-based application of student report card information systems."]
             }
         ],
