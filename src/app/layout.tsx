@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/components/navigation-bar/NavigationBar";
 import Background from "@/components/background/Background";
+import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavigationBar />
 
-        <Background>{children}</Background>
+        <Background>
+          <Providers>{children}</Providers>
+        </Background>
       </body>
     </html>
   );
