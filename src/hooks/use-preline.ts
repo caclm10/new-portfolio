@@ -17,9 +17,10 @@ export default function usePrelineScript() {
         import("preline/preline");
     }, []);
 
-    useEffect(() => {
-        setTimeout(() => {
-            window.HSStaticMethods.autoInit();
-        }, 100);
-    }, [path]);
+    /** TO-DO: Still error but didn't need this for now */
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         window.HSStaticMethods.autoInit();
+    //     }, 100);
+    // }, [path]);
 }
