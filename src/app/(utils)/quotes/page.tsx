@@ -1,8 +1,13 @@
-import { Button } from "@/components/shared/button";
 import Spinner from "./spinner";
 import NewButton from "./new-button";
 import Quote from "./quote";
 import TwitterButton from "./twitter-button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Quote Generator - Lewin Xander Gulo",
+  description: "Simple quote generator for your day",
+};
 
 export default function Quotes() {
   return (
