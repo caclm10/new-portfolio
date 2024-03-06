@@ -30,7 +30,12 @@ export default function NewButton() {
   }, []);
 
   return (
-    <Button id="new-quote-button" className="button" onClick={fetchQuote}>
+    <Button
+      id="new-quote-button"
+      color="secondary"
+      className="button"
+      onClick={fetchQuote}
+    >
       New Quote
     </Button>
   );

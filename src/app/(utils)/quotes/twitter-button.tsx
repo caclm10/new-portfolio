@@ -12,7 +12,13 @@ export default function TwitterButton() {
     : "#";
 
   return (
-    <Button as={"a"} href={href} target="_blank" className="group">
+    <Button
+      as={"a"}
+      href={href}
+      target="_blank"
+      className="group"
+      color="secondary"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
