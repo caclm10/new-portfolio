@@ -17,7 +17,7 @@ const PageHeader = ({
         <h2 className="mb-2 text-4xl md:text-5xl font-semibold tracking-wide">
           {title}
         </h2>
-        <h3 className="font-medium text-yellow-500">{subtitle}</h3>
+        <h3 className="font-medium text-primary">{subtitle}</h3>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const NavigationBarMenuItem = ({
       href={href}
       className={cn(
         "inline-flex items-center transition",
-        isActive ? "text-yellow-500" : "hover:text-yellow-500"
+        isActive ? "text-primary" : "hover:text-primary"
       )}
       title={name}
     >

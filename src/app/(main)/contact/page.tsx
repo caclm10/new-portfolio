@@ -13,6 +13,7 @@ export default function Contact() {
         <div className="grid w-full max-w-6xl lg:grid-cols-[350px_1fr] lg:space-x-24 space-y-12 lg:space-y-0">
           <div className="flex flex-col items-center">
             <div className="max-w-[256px] overflow-hidden rounded-full">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/profile.jpg" alt="profile" />
             </div>
 

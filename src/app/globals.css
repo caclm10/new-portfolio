@@ -7,7 +7,7 @@
 }
 
 .splide__arrow svg {
-    fill: #EAB308 !important;
+    fill: #9ab019 !important;
 }
 
 .splide__pagination__page {
@@ -15,5 +15,5 @@
 }
 
 .splide__pagination__page.is-active {
-    background: #EAB308 !important;
+    background: #9ab019 !important;
 }

@@ -3,7 +3,7 @@ interface SkillListItemNameProps {
 }
 
 const SkillListItemName = ({ text }: SkillListItemNameProps) => {
-  return <span className="font-semibold text-yellow-500">{text}</span>;
+  return <span className="font-semibold text-primary">{text}</span>;
 };
 
 export default SkillListItemName;
