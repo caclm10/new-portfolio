@@ -11,6 +11,7 @@ const style = tv({
     },
     color: {
       primary: "",
+      secondary: "",
     },
     variant: {
       solid: "",
@@ -36,6 +37,24 @@ const style = tv({
       variant: "ghost",
       className:
         "text-primary-600 hover:bg-primary-100 hover:text-primary-800 dark:text-primary-500 dark:hover:bg-primary-800/30 dark:hover:text-primary-400",
+    },
+    {
+      color: "secondary",
+      variant: "solid",
+      className:
+        "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary-700",
+    },
+    {
+      color: "secondary",
+      variant: "outline",
+      className:
+        "border-secondary-600 text-secondary-600 hover:border-secondary-500 hover:text-secondary-500 disabled:opacity-50 disabled:pointer-events-none dark:border-secondary-600 dark:text-secondary-600 dark:hover:text-secondary-500 dark:hover:border-secondary-500",
+    },
+    {
+      color: "secondary",
+      variant: "ghost",
+      className:
+        "text-secondary-600 hover:bg-secondary-100 hover:text-secondary-800 dark:text-secondary-500 dark:hover:bg-secondary-800/30 dark:hover:text-secondary-400",
     },
   ],
 });
