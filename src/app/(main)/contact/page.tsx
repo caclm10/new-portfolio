@@ -14,7 +14,7 @@ export default function Contact() {
           <div className="flex flex-col items-center">
             <div className="max-w-[256px] overflow-hidden rounded-full">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/profile.png" alt="profile" />
+              <img src="/profile.png" alt="profile" className="size-[256px]" />
             </div>
 
             <h1 className="mt-4 text-3xl font-medium">Lewin Xander Gulo</h1>
