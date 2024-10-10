@@ -9,15 +9,15 @@ export default function NewButton() {
   async function fetchQuote() {
     $fetchingQuote.set(true);
     try {
-      const url = `https://api.quotable.io/random`;
+      const url = `https://quoteslate.vercel.app/api/quotes/random`;
 
       const resp = await fetch(url);
 
       if (!resp.ok) throw resp;
 
-      const { author, content } = await resp.json();
+      const { author, quote } = await resp.json();
 
-      $fetchedQuote.set({ author, content });
+      $fetchedQuote.set({ author, content: quote });
     } catch (error) {
       console.log(error);
     }
