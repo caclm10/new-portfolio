@@ -71,20 +71,32 @@ function Modal({ open, onOpenChange, children }: ModalProps) {
     );
 }
 
-function ModalTrigger(props: PrimitiveProps) {
+function ModalTrigger({ className, ...props }: PrimitiveProps) {
     const { isMobile } = useModal();
 
     const Elem = isMobile ? DrawerTrigger : DialogTrigger;
 
-    return <Elem data-slot="modal-trigger" {...props} />;
+    return (
+        <Elem
+            data-slot="modal-trigger"
+            className={`cursor-pointer ${className}`}
+            {...props}
+        />
+    );
 }
 
-function ModalContent(props: PrimitiveProps) {
+function ModalContent({ className, ...props }: PrimitiveProps) {
     const { isMobile } = useModal();
 
     const Elem = isMobile ? DrawerContent : DialogContent;
 
-    return <Elem data-slot="modal-content" {...props} />;
+    return (
+        <Elem
+            data-slot="modal-content"
+            className={`font-sans ${className}`}
+            {...props}
+        />
+    );
 }
 
 function ModalHeader(props: PrimitiveProps) {
@@ -115,7 +127,10 @@ function ModalBody({ className, ...props }: React.ComponentProps<"div">) {
     return (
         <div
             data-slot="modal-body"
-            className={cn("px-4 pt-4 sm:px-0 sm:pt-0", className)}
+            className={cn(
+                "flex flex-col gap-1 px-4 pt-4 sm:px-0 sm:pt-0",
+                className,
+            )}
             {...props}
         />
     );
