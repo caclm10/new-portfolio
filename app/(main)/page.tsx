@@ -1,3 +1,5 @@
+import { ArrowRightIcon } from "lucide-react";
+
 import { Button } from "@/components/button";
 import {
     Features,
@@ -9,7 +11,6 @@ import {
     TimelineItem,
     TimelineTitle,
 } from "@/features/portfolio/components";
-import { ArrowRightIcon } from "lucide-react";
 
 function IndexPage() {
     return (

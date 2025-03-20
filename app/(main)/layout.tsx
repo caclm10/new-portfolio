@@ -1,4 +1,4 @@
-import { MailIcon } from "lucide-react";
+import { CopyrightIcon, MailIcon } from "lucide-react";
 import type { Metadata } from "next";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/avatar";
@@ -81,6 +81,16 @@ function MainLayout({ children }: React.PropsWithChildren) {
                 </TabNav>
 
                 <main className="flex flex-col gap-11">{children}</main>
+
+                <div
+                    className="flex items-center justify-center gap-2.5 pt-10 text-center"
+                    data-slot="footer"
+                >
+                    <div className="flex items-center gap-4">
+                        <CopyrightIcon className="size-5" />
+                        <p>2025 - Lewin Xander</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
