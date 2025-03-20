@@ -43,7 +43,7 @@ export default function RootLayout({
                 className={clsx(
                     ibmPlexMono.variable,
                     outfit.variable,
-                    "font-mono antialiased",
+                    "bg-body text-on-body font-mono antialiased",
                 )}
             >
                 {children}

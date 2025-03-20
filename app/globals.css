@@ -6,3 +6,13 @@
     --font-sans: var(--font-outfit);
     --font-mono: var(--font-ibm-plex-mono);
 }
+
+@theme {
+    --color-body: #fafafa;
+    --color-on-body: #18181b;
+    --color-border: #e4e4e7;
+    --color-muted: #f4f4f5;
+    --color-on-muted: #71717b;
+    --color-primary: #18181b;
+    --color-on-primary: #fafafa;
+}
