@@ -137,7 +137,9 @@ function IndexPage() {
                                             ))}
                                         </div>
                                     )}
-                                    <p>{project.about}</p>
+                                    <p className="text-justify">
+                                        {project.about}
+                                    </p>
                                 </ModalBody>
 
                                 <ModalFooter>
