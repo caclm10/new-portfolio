@@ -1,0 +1,66 @@
+import { CodeXmlIcon } from "lucide-react";
+
+import { cn } from "@/utils/classname";
+
+function Features({ className, ...props }: React.ComponentProps<"div">) {
+    return (
+        <div
+            data-slot="features"
+            className={cn("flex flex-col gap-6", className)}
+            {...props}
+        />
+    );
+}
+
+function FeaturesTitle({ className, ...props }: React.ComponentProps<"h3">) {
+    return (
+        <h3
+            data-slot="features-title"
+            className={cn("text-2xl font-semibold", className)}
+            {...props}
+        />
+    );
+}
+
+function FeaturesList({ className, ...props }: React.ComponentProps<"div">) {
+    return (
+        <div
+            data-slot="features-list"
+            className={cn("grid grid-cols-2 gap-10 sm:grid-cols-3", className)}
+            {...props}
+        />
+    );
+}
+
+function FeaturesItem({
+    title,
+    description,
+    className,
+    ...props
+}: React.ComponentProps<"div"> & { title: string; description: string }) {
+    return (
+        <div
+            data-slot="features-item"
+            className={cn("flex flex-col gap-2", className)}
+            {...props}
+        >
+            <span
+                data-slot="features-item-icon"
+                className="border-primary text-primary inline-flex size-9 items-center justify-center rounded-xl border"
+            >
+                <CodeXmlIcon className="size-5" />
+            </span>
+            <h4 data-slot="features-item-title" className="font-semibold">
+                {title}
+            </h4>
+            <p
+                data-slot="features-item-description"
+                className="text-on-muted text-sm"
+            >
+                {description}
+            </p>
+        </div>
+    );
+}
+
+export { Features, FeaturesItem, FeaturesList, FeaturesTitle };

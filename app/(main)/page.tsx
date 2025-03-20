@@ -1,9 +1,15 @@
+import { Button } from "@/components/button";
 import {
+    Features,
+    FeaturesItem,
+    FeaturesList,
+    FeaturesTitle,
     Timeline,
     TimelineDetail,
     TimelineItem,
     TimelineTitle,
 } from "@/features/portfolio/components";
+import { ArrowRightIcon } from "lucide-react";
 
 function IndexPage() {
     return (
@@ -77,6 +83,37 @@ function IndexPage() {
                     </TimelineDetail>
                 </TimelineItem>
             </Timeline>
+
+            <Features>
+                <FeaturesTitle>Projects</FeaturesTitle>
+
+                <FeaturesList>
+                    <FeaturesItem
+                        title="SIRS Eria"
+                        description="Online student report card web app"
+                    />
+                    <FeaturesItem
+                        title="BersamaHidup"
+                        description="Online donation and fundraising web app"
+                    />
+                    <FeaturesItem
+                        title="Seah Bimbingan"
+                        description="Personal Guidance Notes PWA"
+                    />
+                </FeaturesList>
+
+                <div className="flex justify-end">
+                    <Button
+                        type="button"
+                        variant="ghost"
+                        size="sm"
+                        className="text-xs"
+                    >
+                        Show More
+                        <ArrowRightIcon className="size-3.5" />
+                    </Button>
+                </div>
+            </Features>
         </>
     );
 }
