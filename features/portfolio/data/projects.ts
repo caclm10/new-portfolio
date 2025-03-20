@@ -1,5 +1,6 @@
-import { GithubIcon } from "@/components/icons";
 import { GlobeIcon } from "lucide-react";
+
+import { GithubIcon } from "@/components/icons";
 
 interface ProjectLink {
     url: string;
@@ -8,7 +9,7 @@ interface ProjectLink {
     icon: React.ComponentType;
 }
 
-interface Project {
+export interface Project {
     title: string;
     description: string;
     about: string;
@@ -19,7 +20,7 @@ interface Project {
     };
 }
 
-const projects: Project[] = [
+const mainProjects: Project[] = [
     {
         title: "SIRS Eria",
         description: "Online student report card web app",
@@ -55,6 +56,9 @@ const projects: Project[] = [
             },
         ],
     },
+];
+
+const miniProjects: Project[] = [
     {
         title: "Seah Bimbingan",
         description: "Personal guidance notes app.",
@@ -68,12 +72,56 @@ const projects: Project[] = [
             },
             {
                 icon: GlobeIcon,
-                url: "https://seah-bimbingan.vercel.app/",
+                url: "https://seah-bimbingan.vercel.app",
                 label: "Seah Bimbingan Live Web",
+                alt: "Web",
+            },
+        ],
+    },
+    {
+        title: "Matcha Latte",
+        description: "Make a matcha latte",
+        about: `Just a simple tutorial to make an Iced Matcha Latte. Built using Astro.`,
+        links: [
+            {
+                icon: GithubIcon,
+                url: "https://github.com/caclm10/matcha-latte",
+                label: "Matcha Latte Repository",
+                alt: "Github",
+            },
+            {
+                icon: GlobeIcon,
+                url: "https://caclm10.github.io/matcha-latte",
+                label: "Matcha Latte Live Web",
+                alt: "Web",
+            },
+        ],
+    },
+    {
+        title: "Tic tac toe",
+        description: "Classic tic tac toe game",
+        about: `Simple implementation of the classic game Tic Tac Toe. The game is built using HTML, CSS and JavaScript.`,
+        links: [
+            {
+                icon: GithubIcon,
+                url: "https://github.com/caclm10/tic-tac-toe",
+                label: "Tic tac toe Repository",
+                alt: "Github",
+            },
+            {
+                icon: GlobeIcon,
+                url: "https://caclm10.github.io/tic-tac-toe",
+                label: "Tic tac toe Live Web",
                 alt: "Web",
             },
         ],
     },
 ];
 
-export { projects };
+const highlightedProjects: Project[] = [
+    mainProjects[0],
+    mainProjects[1],
+    miniProjects[0],
+];
+
+export { highlightedProjects, mainProjects, miniProjects };

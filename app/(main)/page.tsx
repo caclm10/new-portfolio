@@ -3,28 +3,15 @@ import Link from "next/link";
 
 import { Button } from "@/components/button";
 import {
-    Modal,
-    ModalBody,
-    ModalCancel,
-    ModalContent,
-    ModalDescription,
-    ModalFooter,
-    ModalHeader,
-    ModalTitle,
-    ModalTrigger,
-} from "@/components/modal";
-import {
-    ContactButton,
     Features,
-    FeaturesItem,
-    FeaturesList,
     FeaturesTitle,
     Timeline,
     TimelineDetail,
     TimelineItem,
     TimelineTitle,
 } from "@/features/portfolio/components";
-import { projects } from "@/features/portfolio/data/projects";
+import { ProjectList } from "@/features/portfolio/components/project";
+import { highlightedProjects } from "@/features/portfolio/data/projects";
 
 function IndexPage() {
     return (
@@ -100,56 +87,9 @@ function IndexPage() {
             </Timeline>
 
             <Features>
-                <FeaturesTitle>Projects</FeaturesTitle>
+                <FeaturesTitle>Highlighted Projects</FeaturesTitle>
 
-                <FeaturesList>
-                    {projects.map((project) => (
-                        <Modal key={project.title}>
-                            <ModalTrigger asChild>
-                                <FeaturesItem
-                                    title={project.title}
-                                    description={project.description}
-                                />
-                            </ModalTrigger>
-
-                            <ModalContent>
-                                <ModalHeader>
-                                    <ModalTitle>
-                                        {project.modal?.title || project.title}
-                                    </ModalTitle>
-                                    <ModalDescription>
-                                        {project.modal?.description ||
-                                            project.description}
-                                    </ModalDescription>
-                                </ModalHeader>
-
-                                <ModalBody>
-                                    {project.links.length > 0 && (
-                                        <div className="flex items-center gap-3">
-                                            {project.links.map((link) => (
-                                                <ContactButton
-                                                    key={link.url}
-                                                    icon={link.icon}
-                                                    url={link.url}
-                                                    label={link.label}
-                                                    alt={link.alt}
-                                                    variant="outline"
-                                                />
-                                            ))}
-                                        </div>
-                                    )}
-                                    <p className="text-justify">
-                                        {project.about}
-                                    </p>
-                                </ModalBody>
-
-                                <ModalFooter>
-                                    <ModalCancel>Close</ModalCancel>
-                                </ModalFooter>
-                            </ModalContent>
-                        </Modal>
-                    ))}
-                </FeaturesList>
+                <ProjectList items={highlightedProjects} />
 
                 <div className="flex justify-end">
                     <Button
