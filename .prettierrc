@@ -1,0 +1,15 @@
+{
+    "plugins": [
+        "prettier-plugin-organize-imports",
+        "prettier-plugin-tailwindcss"
+    ],
+    "tailwindFunctions": ["clsx", "cn", "cva"],
+    "overrides": [
+        {
+            "files": "**/*.yml",
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}
