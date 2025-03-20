@@ -1,11 +1,10 @@
 import clsx from "clsx";
-import { IBM_Plex_Mono, Outfit } from "next/font/google";
+import { Fira_Code, Outfit } from "next/font/google";
 import "./globals.css";
 
-const ibmPlexMono = IBM_Plex_Mono({
-    variable: "--font-ibm-plex-mono",
+const firaCode = Fira_Code({
+    variable: "--font-fira-code",
     subsets: ["latin"],
-    weight: ["400", "500", "600"],
     fallback: [
         "ui-monospace",
         "SFMono-Regular",
@@ -41,7 +40,7 @@ export default function RootLayout({
         <html lang="en">
             <body
                 className={clsx(
-                    ibmPlexMono.variable,
+                    firaCode.variable,
                     outfit.variable,
                     "bg-body text-on-body font-mono antialiased",
                 )}

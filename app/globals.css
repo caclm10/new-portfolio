@@ -6,7 +6,7 @@
 
 @theme inline {
     --font-sans: var(--font-outfit);
-    --font-mono: var(--font-ibm-plex-mono);
+    --font-mono: var(--font-fira-code);
 }
 
 @theme {
