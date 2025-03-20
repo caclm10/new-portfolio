@@ -2,8 +2,8 @@ import { MailIcon } from "lucide-react";
 import type { Metadata } from "next";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/avatar";
-import { Button } from "@/components/button";
 import { GithubIcon, InstagramIcon, LinkedinIcon } from "@/components/icons";
+import { ContactButton } from "@/features/portfolio/components";
 
 const metadata: Metadata = {
     title: {
@@ -42,18 +42,30 @@ function MainLayout({ children }: React.PropsWithChildren) {
                         className="flex items-center gap-9"
                         data-slot="contacts"
                     >
-                        <Button type="button" variant="ghost" size="icon">
-                            <GithubIcon />
-                        </Button>
-                        <Button type="button" variant="ghost" size="icon">
-                            <LinkedinIcon />
-                        </Button>
-                        <Button type="button" variant="ghost" size="icon">
-                            <InstagramIcon />
-                        </Button>
-                        <Button type="button" variant="ghost" size="icon">
-                            <MailIcon />
-                        </Button>
+                        <ContactButton
+                            url="https://github.com/caclm10"
+                            label="caclm10"
+                            alt="Github"
+                            icon={GithubIcon}
+                        />
+                        <ContactButton
+                            url="https://linkedin.com/in/lewinxander"
+                            label="lewinxander"
+                            alt="Linkedin"
+                            icon={LinkedinIcon}
+                        />
+                        <ContactButton
+                            url="https://instagram.com/lewin.xander"
+                            label="lewin.xander"
+                            alt="Instagram"
+                            icon={InstagramIcon}
+                        />
+                        <ContactButton
+                            url="mailto:lewinxander@gmail.com"
+                            label="lewinxander@gmail.com"
+                            alt="E-mail address"
+                            icon={MailIcon}
+                        />
                     </div>
                 </div>
 
