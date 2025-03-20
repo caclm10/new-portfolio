@@ -23,3 +23,9 @@
     margin-inline: auto;
     max-width: 768px;
 }
+
+@layer base {
+    * {
+        border-color: var(--color-border);
+    }
+}

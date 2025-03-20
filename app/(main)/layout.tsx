@@ -17,7 +17,7 @@ const metadata: Metadata = {
 function MainLayout({ children }: React.PropsWithChildren) {
     return (
         <div className="min-h-dvh px-4 py-8">
-            <div className="container">
+            <div className="container flex flex-col gap-12">
                 <div className="flex flex-col gap-8" data-slot="header">
                     <div className="flex flex-col gap-5" data-slot="profile">
                         <Avatar className="size-15">
@@ -68,6 +68,8 @@ function MainLayout({ children }: React.PropsWithChildren) {
                         />
                     </div>
                 </div>
+
+                <div className="h-px border"></div>
 
                 <main>{children}</main>
             </div>
