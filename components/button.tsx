@@ -9,18 +9,19 @@ const buttonVariants = cva(
     {
         variants: {
             variant: {
-                default:
+                primary:
                     "bg-primary text-on-primary hover:bg-primary/90 shadow-xs",
                 ghost: "text-primary hover:bg-primary/10",
             },
             size: {
-                default: "h-9 px-4 py-2 has-[>svg]:px-3",
+                md: "h-9 px-4 py-2 has-[>svg]:px-3",
+                sm: "h-8 gap-1.5 rounded-lg px-3 has-[>svg]:px-2.5",
                 icon: "size-9",
             },
         },
         defaultVariants: {
-            variant: "default",
-            size: "default",
+            variant: "primary",
+            size: "md",
         },
     },
 );
