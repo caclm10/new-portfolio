@@ -4,6 +4,7 @@ import { CodeXmlIcon } from "lucide-react";
 import { motion } from "motion/react";
 
 import { cn } from "@/utils/classname";
+import { easeOutElastic } from "@/utils/easing";
 
 function Features({ className, ...props }: React.ComponentProps<"div">) {
     return (
@@ -49,13 +50,11 @@ function FeaturesItem({
             data-slot="features-item"
             className={cn("ease-in-out-back flex flex-col gap-2", className)}
             transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 10,
-                duration: 0.3,
+                ease: easeOutElastic,
+                duration: 0.8,
             }}
             whileHover={{
-                translateY: "-0.5rem",
+                translateY: "-0.6rem",
             }}
             {...props}
         >
