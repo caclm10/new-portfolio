@@ -11,11 +11,9 @@ const metadata: Metadata = {
 
 function MainLayout({ children }: React.PropsWithChildren) {
     return (
-        <>
-            {/*  */}
-
-            {children}
-        </>
+        <div className="min-h-dvh px-4 py-8">
+            <div className="container">{children}</div>
+        </div>
     );
 }
 

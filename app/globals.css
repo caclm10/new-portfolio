@@ -16,3 +16,8 @@
     --color-primary: #18181b;
     --color-on-primary: #fafafa;
 }
+
+@utility container {
+    margin-inline: auto;
+    max-width: 768px;
+}
