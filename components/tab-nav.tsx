@@ -39,7 +39,7 @@ function TabNavLink({
             data-slot="tab-nav-link"
             active={isActive}
             className={cn(
-                "text-primary hover:bg-primary/10 inline-flex items-center justify-center rounded-xl px-2.5 py-1.5 text-sm",
+                "text-primary hover:bg-primary/10 inline-flex items-center justify-center rounded-xl px-2.5 py-1.5 text-sm transition-colors",
                 "data-[active]:bg-primary data-[active]:text-on-primary",
             )}
             asChild={!!href}
