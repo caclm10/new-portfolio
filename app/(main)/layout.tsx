@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/avatar";
 import { GithubIcon, InstagramIcon, LinkedinIcon } from "@/components/icons";
+import { TabNav, TabNavLink, TabNavList } from "@/components/tab-nav";
 import { ContactButton } from "@/features/portfolio/components";
 
 const metadata: Metadata = {
@@ -71,7 +72,15 @@ function MainLayout({ children }: React.PropsWithChildren) {
 
                 <div className="h-px border"></div>
 
-                <main>{children}</main>
+                <TabNav>
+                    <TabNavList>
+                        <TabNavLink href="/">About</TabNavLink>
+                        <TabNavLink href="/skills">Skills</TabNavLink>
+                        <TabNavLink href="/projects">Projects</TabNavLink>
+                    </TabNavList>
+                </TabNav>
+
+                <main className="flex flex-col gap-11">{children}</main>
             </div>
         </div>
     );
