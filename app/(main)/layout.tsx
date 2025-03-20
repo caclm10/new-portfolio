@@ -1,6 +1,9 @@
+import { MailIcon } from "lucide-react";
 import type { Metadata } from "next";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/avatar";
+import { Button } from "@/components/button";
+import { GithubIcon, InstagramIcon, LinkedinIcon } from "@/components/icons";
 
 const metadata: Metadata = {
     title: {
@@ -33,6 +36,24 @@ function MainLayout({ children }: React.PropsWithChildren) {
                                 Junior Web Developer
                             </h2>
                         </div>
+                    </div>
+
+                    <div
+                        className="flex items-center gap-9"
+                        data-slot="contacts"
+                    >
+                        <Button type="button" variant="ghost" size="icon">
+                            <GithubIcon />
+                        </Button>
+                        <Button type="button" variant="ghost" size="icon">
+                            <LinkedinIcon />
+                        </Button>
+                        <Button type="button" variant="ghost" size="icon">
+                            <InstagramIcon />
+                        </Button>
+                        <Button type="button" variant="ghost" size="icon">
+                            <MailIcon />
+                        </Button>
                     </div>
                 </div>
 
