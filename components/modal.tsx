@@ -128,7 +128,7 @@ function ModalBody({ className, ...props }: React.ComponentProps<"div">) {
         <div
             data-slot="modal-body"
             className={cn(
-                "flex flex-col gap-1 px-4 pt-4 sm:px-0 sm:pt-0",
+                "flex flex-col gap-2 px-4 pt-4 sm:px-0 sm:pt-0",
                 className,
             )}
             {...props}
@@ -155,7 +155,7 @@ function ModalClose(props: PrimitiveProps) {
 function ModalCancel(props: React.ComponentProps<typeof ModalClose>) {
     return (
         <ModalClose
-            className={buttonVariants({ variant: "ghost" })}
+            className={buttonVariants({ variant: "outline" })}
             {...props}
         />
     );

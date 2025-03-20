@@ -125,7 +125,7 @@ function IndexPage() {
 
                                 <ModalBody>
                                     {project.links.length > 0 && (
-                                        <div className="flex items-center gap-2">
+                                        <div className="flex items-center gap-3">
                                             {project.links.map((link) => (
                                                 <ContactButton
                                                     key={link.url}
@@ -133,6 +133,7 @@ function IndexPage() {
                                                     url={link.url}
                                                     label={link.label}
                                                     alt={link.alt}
+                                                    variant="outline"
                                                 />
                                             ))}
                                         </div>

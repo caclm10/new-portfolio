@@ -6,12 +6,19 @@ interface ContactButtonProps {
     label: string;
     alt: string;
     icon: React.ComponentType;
+    variant?: "ghost" | "outline";
 }
-function ContactButton({ url, label, alt, icon: Icon }: ContactButtonProps) {
+function ContactButton({
+    url,
+    label,
+    alt,
+    icon: Icon,
+    variant = "ghost",
+}: ContactButtonProps) {
     return (
         <Tooltip>
             <TooltipTrigger asChild>
-                <Button type="button" variant="ghost" size="icon" asChild>
+                <Button type="button" variant={variant} size="icon" asChild>
                     <a href={url} target="_blank">
                         <Icon />
                         <span className="sr-only">{alt}</span>
