@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 
 import { Button } from "@/components/button";
 import {
@@ -109,9 +110,12 @@ function IndexPage() {
                         variant="ghost"
                         size="sm"
                         className="text-xs"
+                        asChild
                     >
-                        Show More
-                        <ArrowRightIcon className="size-3.5" />
+                        <Link href="/projects">
+                            Show More
+                            <ArrowRightIcon className="size-3.5" />
+                        </Link>
                     </Button>
                 </div>
             </Features>

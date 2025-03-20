@@ -1,4 +1,7 @@
+"use client";
+
 import { CodeXmlIcon } from "lucide-react";
+import { motion } from "motion/react";
 
 import { cn } from "@/utils/classname";
 
@@ -37,11 +40,23 @@ function FeaturesItem({
     description,
     className,
     ...props
-}: React.ComponentProps<"div"> & { title: string; description: string }) {
+}: React.ComponentProps<typeof motion.div> & {
+    title: string;
+    description: string;
+}) {
     return (
-        <div
+        <motion.div
             data-slot="features-item"
-            className={cn("flex flex-col gap-2", className)}
+            className={cn("ease-in-out-back flex flex-col gap-2", className)}
+            transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 10,
+                duration: 0.3,
+            }}
+            whileHover={{
+                translateY: "-0.5rem",
+            }}
             {...props}
         >
             <span
@@ -59,7 +74,7 @@ function FeaturesItem({
             >
                 {description}
             </p>
-        </div>
+        </motion.div>
     );
 }
 
