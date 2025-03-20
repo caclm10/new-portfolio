@@ -40,10 +40,12 @@ function FeaturesItem({
     title,
     description,
     className,
+    icon: Icon,
     ...props
 }: React.ComponentProps<typeof motion.div> & {
     title: string;
     description: string;
+    icon?: React.ComponentType;
 }) {
     return (
         <motion.div
@@ -60,9 +62,9 @@ function FeaturesItem({
         >
             <span
                 data-slot="features-item-icon"
-                className="border-primary text-primary inline-flex size-9 items-center justify-center rounded-xl border"
+                className="border-primary text-primary inline-flex size-9 items-center justify-center rounded-xl border [&_svg]:size-5"
             >
-                <CodeXmlIcon className="size-5" />
+                {Icon ? <Icon /> : <CodeXmlIcon />}
             </span>
             <h4 data-slot="features-item-title" className="font-semibold">
                 {title}
