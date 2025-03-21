@@ -1,5 +1,11 @@
 import { GlobeIcon } from "lucide-react";
+import type { StaticImageData } from "next/image";
 
+import bersamaHidupImage from "@/assets/bersamahidup.png";
+import matchaLatteImage from "@/assets/matcha-latte.png";
+import seahBimbinganImage from "@/assets/seah-bimbingan.png";
+import sirsImage from "@/assets/sirs.png";
+import ticTacToeImage from "@/assets/tic-tac-toe.png";
 import { GithubIcon } from "@/components/icons";
 
 interface ProjectLink {
@@ -14,6 +20,7 @@ export interface Project {
     description: string;
     about: string;
     links: ProjectLink[];
+    image: StaticImageData;
     modal?: {
         title?: string;
         description?: string;
@@ -33,6 +40,7 @@ const mainProjects: Project[] = [
                 alt: "Github",
             },
         ],
+        image: sirsImage,
         modal: {
             title: "Sistem Informasi Raport Siswa (SIRS) Eria",
         },
@@ -55,6 +63,7 @@ const mainProjects: Project[] = [
                 alt: "Web",
             },
         ],
+        image: bersamaHidupImage,
     },
 ];
 
@@ -77,6 +86,7 @@ const miniProjects: Project[] = [
                 alt: "Web",
             },
         ],
+        image: seahBimbinganImage,
     },
     {
         title: "Matcha Latte",
@@ -96,6 +106,7 @@ const miniProjects: Project[] = [
                 alt: "Web",
             },
         ],
+        image: matchaLatteImage,
     },
     {
         title: "Tic tac toe",
@@ -115,6 +126,7 @@ const miniProjects: Project[] = [
                 alt: "Web",
             },
         ],
+        image: ticTacToeImage,
     },
 ];
 
