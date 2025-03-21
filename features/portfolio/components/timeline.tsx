@@ -16,7 +16,7 @@ function TimelineTitle({ className, ...props }: React.ComponentProps<"h3">) {
     return (
         <h3
             data-slot="timeline-title"
-            className={cn("text-2xl font-semibold", className)}
+            className={cn("text-xl font-semibold", className)}
             {...props}
         />
     );

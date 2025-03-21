@@ -36,13 +36,11 @@ function MainLayout({ children }: React.PropsWithChildren) {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-1.5">
-                            <h1 className="font-sans text-xl font-semibold">
+                        <div className="flex flex-col gap-1">
+                            <h1 className="font-sans text-lg leading-none font-semibold">
                                 Lewin Xander
                             </h1>
-                            <h2 className="text-on-muted">
-                                Junior Web Developer
-                            </h2>
+                            <h2 className="text-on-muted">Web Developer</h2>
                         </div>
                     </div>
 
