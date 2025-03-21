@@ -48,7 +48,7 @@ function SkillList() {
 
             <FeaturesItem
                 title="MySQL"
-                description="My primary database when building applications that require a database"
+                description="My primary database when building applications that require a database."
                 icon={MysqlIcon}
             />
 
