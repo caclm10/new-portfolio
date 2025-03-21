@@ -28,4 +28,14 @@
     * {
         border-color: var(--color-border);
     }
+
+    .dark {
+        --color-body: #18181b;
+        --color-on-body: #fafafa;
+        --color-border: #3f3f46;
+        --color-muted: #27272a;
+        --color-on-muted: #a1a1aa;
+        --color-primary: #fafafa;
+        --color-on-primary: #18181b;
+    }
 }

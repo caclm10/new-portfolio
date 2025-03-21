@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import clsx from "clsx";
 import { Fira_Code, Outfit } from "next/font/google";
 import "./globals.css";
@@ -37,7 +38,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <body
                 className={clsx(
                     firaCode.variable,
@@ -45,7 +46,9 @@ export default function RootLayout({
                     "bg-body text-on-body font-mono antialiased",
                 )}
             >
-                {children}
+                <ThemeProvider attribute="class" defaultTheme="light">
+                    {children}
+                </ThemeProvider>
             </body>
         </html>
     );

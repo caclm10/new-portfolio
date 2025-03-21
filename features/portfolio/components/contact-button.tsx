@@ -1,12 +1,11 @@
 import { Button } from "@/components/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/tooltip";
 
-interface ContactButtonProps {
+interface ContactButtonProps extends React.ComponentProps<typeof Button> {
     url: string;
     label: string;
     alt: string;
     icon: React.ComponentType;
-    variant?: "ghost" | "outline";
 }
 function ContactButton({
     url,
@@ -14,13 +13,20 @@ function ContactButton({
     alt,
     icon: Icon,
     variant = "ghost",
+    ...props
 }: ContactButtonProps) {
     return (
         <Tooltip>
             <TooltipTrigger asChild>
-                <Button type="button" variant={variant} size="icon" asChild>
+                <Button
+                    type="button"
+                    variant={variant}
+                    size="icon"
+                    asChild
+                    {...props}
+                >
                     <a href={url} target="_blank">
-                        <Icon />
+                        <Icon data-slot="contact-button-icon" />
                         <span className="sr-only">{alt}</span>
                     </a>
                 </Button>

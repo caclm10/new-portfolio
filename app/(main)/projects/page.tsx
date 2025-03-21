@@ -1,10 +1,11 @@
+import { Section } from "@/components/section";
 import { Features, FeaturesTitle } from "@/features/portfolio/components";
 import { ProjectList } from "@/features/portfolio/components/project";
 import { mainProjects, miniProjects } from "@/features/portfolio/data/projects";
 
 function ProjectsPage() {
     return (
-        <div className="flex flex-col gap-16">
+        <Section className="flex flex-col gap-16" id="projects">
             <Features>
                 <FeaturesTitle>Main Projects</FeaturesTitle>
 
@@ -16,7 +17,7 @@ function ProjectsPage() {
 
                 <ProjectList items={miniProjects} />
             </Features>
-        </div>
+        </Section>
     );
 }
 

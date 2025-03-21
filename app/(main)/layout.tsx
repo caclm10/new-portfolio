@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/avatar";
 import { GithubIcon, InstagramIcon, LinkedinIcon } from "@/components/icons";
 import { TabNav, TabNavLink, TabNavList } from "@/components/tab-nav";
+import { ThemeButton } from "@/components/theme-button";
 import { ContactButton } from "@/features/portfolio/components";
 
 const metadata: Metadata = {
@@ -19,15 +20,21 @@ function MainLayout({ children }: React.PropsWithChildren) {
     return (
         <div className="min-h-dvh px-4 py-8">
             <div className="container flex flex-col gap-12">
-                <div className="flex flex-col gap-8" data-slot="header">
-                    <div className="flex flex-col gap-5" data-slot="profile">
-                        <Avatar className="size-15">
-                            <AvatarImage
-                                src="https://github.com/caclm10.png"
-                                alt="Lewin Xander"
-                            />
-                            <AvatarFallback>LX</AvatarFallback>
-                        </Avatar>
+                <header className="flex flex-col gap-8">
+                    <div className="flex flex-col gap-5">
+                        <div className="flex items-start justify-between">
+                            <Avatar className="size-15">
+                                <AvatarImage
+                                    src="https://github.com/caclm10.png"
+                                    alt="Lewin Xander"
+                                />
+                                <AvatarFallback>LX</AvatarFallback>
+                            </Avatar>
+
+                            <div>
+                                <ThemeButton />
+                            </div>
+                        </div>
 
                         <div className="flex flex-col gap-1.5">
                             <h1 className="font-sans text-xl font-semibold">
@@ -48,27 +55,31 @@ function MainLayout({ children }: React.PropsWithChildren) {
                             label="caclm10"
                             alt="Github"
                             icon={GithubIcon}
+                            className="[&_svg]:size-5!"
                         />
                         <ContactButton
                             url="https://linkedin.com/in/lewinxander"
                             label="lewinxander"
                             alt="Linkedin"
                             icon={LinkedinIcon}
+                            className="[&_svg]:size-5!"
                         />
                         <ContactButton
                             url="https://instagram.com/lewin.xander"
-                            label="lewin.xander"
+                            label="@lewin.xander"
                             alt="Instagram"
                             icon={InstagramIcon}
+                            className="[&_svg]:size-5!"
                         />
                         <ContactButton
                             url="mailto:lewinxander@gmail.com"
                             label="lewinxander@gmail.com"
                             alt="E-mail address"
                             icon={MailIcon}
+                            className="[&_svg]:size-5!"
                         />
                     </div>
-                </div>
+                </header>
 
                 <div className="h-px border"></div>
 
@@ -82,15 +93,12 @@ function MainLayout({ children }: React.PropsWithChildren) {
 
                 <main className="flex flex-col gap-11">{children}</main>
 
-                <div
-                    className="flex items-center justify-center gap-2.5 pt-10 text-center"
-                    data-slot="footer"
-                >
+                <footer className="flex items-center justify-center gap-2.5 pt-10 text-center">
                     <div className="flex items-center gap-4">
                         <CopyrightIcon className="size-5" />
                         <p>2025 - Lewin Xander</p>
                     </div>
-                </div>
+                </footer>
             </div>
         </div>
     );
